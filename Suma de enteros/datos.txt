@@ -1,0 +1,4 @@
+000: 00000 B504E #constante de la cual queremos saber su sumatoria B504E -> 549754775570
+001: 00000 00001 #constante 1
+002: 00000 00002 #constante 2
+003: 00000 00000 #posicion de la memoria para almeacenar el resultado

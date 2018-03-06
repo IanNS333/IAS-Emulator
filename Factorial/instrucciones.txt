@@ -1,0 +1,24 @@
+#factorial de un numero
+
+000: 0900A 0100A
+001: 0600B 21009
+002: 0B009 01009 
+003: 0600C 0F006
+004: 0A000 2100E 
+005: 00000 00000
+006: 0500C 0F001
+
+#cargamos al multiplicador el numero al cual queremos sacar el factorial
+#cargamos al acumulador el numero al cual queremos sacar el factorial
+#le restamos el valor en la posicion 11 (valor=1) al acumulador 
+#guardamos el resultado en la posicion 9
+#multiplicamos el multiplicador por la posicion 9
+#cargamos el valor en la posicion 9 al acumulador
+#le restamos el valor en la posicion 12 (valor=2) (para saber si ya llegamos a 1 y detener la mul)
+#si el acumulador es no-negativo nos vamos a la instruccion izquiera en la dirección 6
+#cargamos el resultado de la multiplicacion (MQ) en el acumulador
+#guardamos el resultado del factorial en la posicion 14
+#halt
+#halt
+#le sumamos el valor en la posicion 12 (valor=2) al acumulador para regresar al valor original 
+#si el acumulador es no-geativo nos vamos a la instruccion izquierda en la direccion 1

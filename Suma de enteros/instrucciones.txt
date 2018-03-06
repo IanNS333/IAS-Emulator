@@ -1,0 +1,16 @@
+#Sumatoria de numeros enteros desde 0 hasta n;
+004: 01000 05001
+005: 21003 09003 
+006: 0B000 0A000
+007: 0C002 0A000
+008: 21003 00000
+
+#01000 agarra el valor de n (posicion 000) y lo guarda en AC
+#05001 le suma al AC 1 (ahora n+1)
+#21003 guarda el valor de AC en la posicion 003 (n+1)
+#09003 carga el valor en la posicion 003 al multiplicador (n+1)
+#0B000 multiplica el valor en la posicion 0 (n) por el multiplicador (n+1)
+#0A000 los 40 bits menos significativos de la multiplicacion (MQ) los transfiere a AC
+#0C002 divide AC entre el valor de la memoria en la posicion 002 (donde se guarda la constante 2)
+#0A000 el cociente de la division(MQ) se transfiere a AC
+#21003 guarda el resultado de la division (AC) en la posicion 003 de la memoria

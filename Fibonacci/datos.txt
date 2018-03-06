@@ -1,0 +1,5 @@
+007: 00000 0000A #numero de veces 
+008: 00001 00000 #Para ir cambiando de direccion en direccion
+009: 00001 00001 #Para ir cambiando de direccion en direccion
+00A: 00000 00001 #constante 1
+00B: 00000 00002 #constante 2
