@@ -1,24 +1,30 @@
 #la sucesion fibonacci guardada en memoria
 
-001: 0100A 0500B
+000: 0100A 0500B
 001: 2100C 01000
 002: 05009 21000
 003: 01001 05008
 004: 21001 01007
 005: 0600A 21007
-006: 0F001 00000
+006: 0F000 00000
 
 #cargamos la posicion 10 que es el primer numero de la serie fibonacci
 #le sumamos el valor de la siguiente direccion y asi obtenemos el siguiente numero fibonacci
+
 #guardamos ese valor en la siguiente posicion
 #cargamos la posicion 0, que son las primeras dos instruccion
+
 #le sumamos el valor de la posicion 9 que contiene el valor 00001 00001 para poder ir recorriendo la memoria
 #guardamos el resultado en 0
+
 #cargamos el segundo par de instrucciones
 #le sumamos el valor de la posicion 8 que contiene el valor 00001 00000 para poder ir recorriendo la memoria
+
 #guardamos el resultado en 1
 #cargamos el numero de veces para hacer la sucesion (n veces)
+
 #le restamos el valor de la posicion 10 (valor = 1)
 #guardamos el resultado de la resta en la posicion 7
-#si el acumulador es no-negativo nos vamos a la instruccion izquierda de 1
+
+#si el acumulador es no-negativo nos vamos a la instruccion izquierda de 0
 #halt
